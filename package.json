@@ -17,24 +17,6 @@
     "dist:win": "npm run build && electron-builder --win nsis",
     "dist:mac": "npm run build && electron-builder --mac"
   },
-  "build": {
-    "appId": "com.espoir.app",
-    "productName": "Espoir",
-    "directories": {
-      "output": "release"
-    },
-    "files": [
-      "dist/**/*",
-      "electron/**/*",
-      "package.json"
-    ],
-    "nsis": {
-      "oneClick": true,
-      "perMachine": false,
-      "allowToChangeInstallationDirectory": false,
-      "shortcutName": "Espoir"
-    }
-  },
   "dependencies": {
     "better-sqlite3": "^9.6.0",
     "clsx": "^2.1.1",
