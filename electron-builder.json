@@ -4,9 +4,8 @@
   "directories": {
     "output": "dist-installer"
   },
-  "buildDependenciesFromSource": true,
   "npmRebuild": true,
-  "electronDist": "node_modules/electron/dist", "files": [
+  "files": [
     "dist/**/*",
     "electron/**/*",
     "public/**/*",
