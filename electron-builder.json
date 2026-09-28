@@ -16,12 +16,10 @@
     "target": [
       "dmg",
       "zip"
-    ],
-    "icon": "mac/icon.icns"
+    ]
   },
   "dmg": {
-    "title": "Centre Soutien Scolaire",
-    "icon": "mac/icon.icns"
+    "title": "Centre Soutien Scolaire"
   },
   "win": {
     "target": [
