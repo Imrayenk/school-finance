@@ -15,7 +15,7 @@
     "package": "node scripts/package_app.mjs",
     "setup": "node scripts/build_setup.mjs",
     "dist:win": "npm run build && electron-builder --win nsis",
-    "dist:mac": "npm run build && electron-builder --mac"
+    "dist:mac": "npm run build && electron-builder --mac --publish never"
   },
   "dependencies": {
     "better-sqlite3": "^9.6.0",
