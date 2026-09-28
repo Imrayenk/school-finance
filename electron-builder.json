@@ -1,0 +1,45 @@
+{
+  "appId": "com.soutienscolaire.admin",
+  "productName": "Centre Soutien Scolaire",
+  "directories": {
+    "output": "dist-installer"
+  },
+  "buildDependenciesFromSource": true,
+  "npmRebuild": true,
+  "electronDist": "node_modules/electron/dist", "files": [
+    "dist/**/*",
+    "electron/**/*",
+    "public/**/*",
+    "package.json"
+  ],
+  "mac": {
+    "target": [
+      "dmg",
+      "zip"
+    ],
+    "icon": "mac/icon.icns"
+  },
+  "dmg": {
+    "title": "Centre Soutien Scolaire",
+    "icon": "mac/icon.icns"
+  },
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      }
+    ]
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowElevation": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Centre Soutien Scolaire"
+  }
+}
